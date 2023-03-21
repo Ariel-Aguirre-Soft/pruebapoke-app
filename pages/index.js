@@ -28,7 +28,7 @@ export default function Home({PokemonList}) {
             
           >
           
-            <div className={HomeCss.card}>
+            <div className={`${HomeCss.card} ${pokemon.types[0].type.name}`}>
               <div className={HomeCss.nombrePoke}>
                 <h3>Nombre:{pokemon.name}</h3>
                 <div className={HomeCss.tipos}>
@@ -53,7 +53,7 @@ export default function Home({PokemonList}) {
                 </div>
 
               </div>
-              <img src={pokemon.image} width="350" height="350"/>
+              <img alt=''src={pokemon.image} width="350" height="350"/>
 
             </div>
           

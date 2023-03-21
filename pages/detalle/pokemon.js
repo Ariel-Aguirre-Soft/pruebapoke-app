@@ -11,19 +11,19 @@ export default function Pokemon({pokemon}){
         <div className={DetalleCss.card}>
             
             <h1>{pokemon.name}</h1>
-            <img className={DetalleCss.pokeimg} src={pokemon.sprites.other.dream_world.front_default} width="500px" height={500}/>
+            <img alt='' className={DetalleCss.pokeimg} src={pokemon.sprites.other.dream_world.front_default} width="500px" height={500}/>
             <span>
-                <img className={DetalleCss.pokeimg} src='https://pngimg.com/d/pokeball_PNG9.png' width="450" height={450}/>
+                <img  alt=''className={DetalleCss.pokeimg} src='https://pngimg.com/d/pokeball_PNG9.png' width="450" height={450}/>
             </span>
             <br/>
            
             <span>
                   <strong>Tipo:</strong>
                  {
-                    pokemon.types.map((tipo,index)=>{
+                    pokemon.types.map((tipo_,index)=>{
                       return(
                         
-                        <span>{tipo.type.name}</span>
+                        <span>{tipo_.type.name}</span>
                       )
                     })
                   }
@@ -47,10 +47,10 @@ export default function Pokemon({pokemon}){
             <span>
                   <strong> Movimientos:</strong>
                  {
-                    pokemon.moves.map((tipo,index)=>{
+                    pokemon.moves.map((mov,index)=>{
                       return(
                         
-                        <span>{index}.{tipo.move.name}|</span>
+                        <span>{index}.{mov.move.name}|</span>
                       )
                     })
                   }
