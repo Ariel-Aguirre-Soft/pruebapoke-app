@@ -18,7 +18,7 @@ export default function Home({PokemonList}) {
     <ul className={HomeCss.columnas}>
       {PokemonList.map((pokemon, index)=>{
       return(
-        <li>
+        
           <Link href={{
             pathname:'/detalle/pokemon',
             query:{name:pokemon.name}
@@ -58,7 +58,7 @@ export default function Home({PokemonList}) {
             </div>
           
           </Link>
-        </li>
+        
       )
       })}
     </ul>
