@@ -1,0 +1,68 @@
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0d1052bc;
+    padding: 1rem;
+    color: #fff;
+  }
+  
+  .menu ul {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+  }
+  
+  .menu ul li a:hover {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  .menu .logo {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .buttons-container {
+    display: flex;
+    overflow-x: auto; /* Para permitir desplazamiento horizontal */
+    background-color: rgb(192, 197, 231);
+  }
+  
+  .buttons-container ul {
+    display: flex;
+    flex-wrap: nowrap; /* Para evitar que los botones se desborden */
+  }
+  
+  .buttons-container ul li {
+    flex: 0 0 auto; /* Para establecer un ancho automático y no permitir crecimiento */
+    margin-right: 1rem; /* Para agregar un espacio entre botones */
+    
+  }
+  
+  .buttons-container ul li:last-child {
+    margin-right: 0; /* Para eliminar el espacio entre el último botón y el borde derecho */
+  }
+  .buttons-container ul li:nth-child(4),
+.buttons-container ul li:nth-child(5) {
+  background-color: #0070f3;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  
+}
+.btn-primary {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+  }

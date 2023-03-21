@@ -3,18 +3,24 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import HomeCss from '@/styles/Home.module.css'
 import Link from 'next/link';
+import Menu from './componentes/Menu';
+
 
 export default function Home({PokemonList}) {
   console.log("PokemonList",PokemonList)
   return (
     
    <>
+    <Head>
+        <title>Pokemons</title>
+      </Head>
+      <Menu/>
     <ul className={HomeCss.columnas}>
       {PokemonList.map((pokemon, index)=>{
       return(
         <li>
           <Link href={{
-            pathname:'/pokemon/[name]',
+            pathname:'/detalle/pokemon',
             query:{name:pokemon.name}
           }
 
