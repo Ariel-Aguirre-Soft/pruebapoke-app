@@ -59,7 +59,7 @@ export default function Pokemon({pokemon}){
                  <br/>
                  <Link href="/">
                     
-                 <button class="mi-boton">Volver</button>
+                 <button class="red-button">Volver</button>
                     
                  </Link>
                  
